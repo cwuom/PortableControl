@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PortableControl</string>
+    <string name="menu">MENU</string>
+    <string name="microsoft_windows_c_microsoft_corporation">Microsoft Windows [版本 *示例返回] (c) Microsoft Corporation。保留所有权利。</string>
+    <string name="enter">Enter</string>
+    <string name="cmd"><![CDATA[>]]></string>
+    <string name="superctrl">进阶控制</string>
+</resources>

@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven{ url 'https://maven.aliyun.com/repository/public'}
+        maven{ url 'https://maven.aliyun.com/repository/google'}
+        maven { url 'https://jitpack.io' }
+        jcenter()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        //引用通过JitPack.io发布的第三方库
+        maven{ url 'https://maven.aliyun.com/repository/public'}
+        maven{ url 'https://maven.aliyun.com/repository/google'}
+        maven { url 'https://jitpack.io' }
+        jcenter()
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "PortableControl"
+include ':app'

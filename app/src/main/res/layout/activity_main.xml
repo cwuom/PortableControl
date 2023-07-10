@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Connecting"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#CACACA"
+            android:paddingBottom="50dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Volume"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#686868"
+            android:paddingTop="50dp"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="11:45:14"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#CACACA"
+            />
+
+        <com.cwuom.portablecontrol.CircularProgressView
+            android:id="@+id/CircularProgressView"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:padding="30dp"
+            app:backColor="#5E5E5E"
+            app:backWidth="20dp"
+            app:progColor="#FFFFFF"
+            app:progWidth="30dp"
+            app:progress="0"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <ImageButton
+            android:id="@+id/paused"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src ="@drawable/paused"
+            android:background="#00FF0000"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:padding="10dp"
+            />
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src ="@drawable/previous"
+            android:background="#00FF0000"
+            android:layout_marginStart="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+
+            android:padding="10dp"
+            />
+
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src ="@drawable/next"
+            android:background="#00FF0000"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+
+            android:padding="10dp"
+            />
+
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/menu"
+            android:background="@drawable/btn_bg"
+            />
+
+
+    </RelativeLayout>
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:realtimeBlurRadius="0dp"
+        app:realtimeOverlayColor="#39000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:id="@+id/rl_power"
+        android:visibility="gone">
+
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/st_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="执行电源操作"
+            android:layout_alignParentBottom="true"
+            app:outer_color="#61FF7D74"
+            app:inner_color="#36000000"
+            app:slider_icon_color="#FFFFFF"
+            app:text_color="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

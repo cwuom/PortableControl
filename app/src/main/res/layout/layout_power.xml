@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:background="#FFFFFF"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/btn_shutdown"
+            android:layout_width="0dip"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_shutdown"
+            android:src="@drawable/shutdown"
+            android:scaleType="fitCenter"
+            android:padding="28dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_sleep"
+            android:layout_width="0dip"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_sleep"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/sleep"
+            android:scaleType="fitCenter"
+            android:padding="28dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

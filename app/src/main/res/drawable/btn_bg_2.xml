@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="1.0px"
+    android:insetRight="1.0px" >
+
+    <selector>
+        <item>
+            <shape>
+                <gradient
+                    android:angle="270.0"
+                    android:endColor="#673AB7"
+                    android:startColor="#7E5CBA" />
+
+                <corners
+                    android:bottomLeftRadius="200dip"
+                    android:bottomRightRadius="200.0dip"
+                    android:radius="200.0dip"
+                    android:topLeftRadius="200.0dip"
+                    android:topRightRadius="200.0dip" />
+            </shape>
+        </item>
+    </selector>
+
+</inset>
